@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{8E0C60C3-201F-4B92-8830-B954D0205818}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Client\Sender.csproj", "{8E0C60C3-201F-4B92-8830-B954D0205818}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message", "Message\Message.csproj", "{DF4C4CC2-A790-4DB2-962F-A09F5E59B2C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{6F708857-FA71-41FF-9BCB-2A46B5D8CA8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Server\Service.csproj", "{6F708857-FA71-41FF-9BCB-2A46B5D8CA8C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E423540A-A061-4CEA-B332-7C80D3F3AB2C}"
 	ProjectSection(SolutionItems) = preProject

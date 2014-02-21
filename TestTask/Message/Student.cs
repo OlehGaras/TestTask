@@ -1,12 +1,16 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using NServiceBus;
 
 namespace Message
 {
     [Serializable]
-    public class Student:IMessage
+    public class Student : IMessage
     {
+        [Key]
+        public int ID { get; set; }
+
         public string Name { get; set; }
         public string SurName { get; set; }
         public DateTime DateOfBirth { get; set; }
@@ -35,7 +39,7 @@ namespace Message
 
         public override string ToString()
         {
-            return "Name: " + Name + " Surname: " + SurName + "Date of birth: " + DateOfBirth.ToString(CultureInfo.InvariantCulture);
+            return "Name: " + Name + "\nSurname: " + SurName + "\nDate of birth: " + DateOfBirth.ToString(CultureInfo.InvariantCulture);
         }
     }
 }
