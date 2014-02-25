@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using NServiceBus;
@@ -9,19 +9,19 @@ namespace Message
     public class Student : IMessage
     {
         [Key]
-        public int ID { get; set; }
-
+        public int Id { get; set; }
         public string Name { get; set; }
         public string SurName { get; set; }
         public DateTime DateOfBirth { get; set; }
+        private readonly Random mRandom = new Random();
 
         public Student()
         {
-            var random = new Random();
             var names = Enum.GetValues(typeof(Names));
             var surnames = Enum.GetValues(typeof(Surnames));
-            Name = names.GetValue(random.Next(names.Length)).ToString();
-            SurName = surnames.GetValue(random.Next(surnames.Length)).ToString();
+            
+            Name = names.GetValue(mRandom.Next(names.Length)).ToString();
+            SurName = surnames.GetValue(mRandom.Next(surnames.Length)).ToString();
             DateOfBirth = DateTime.Now;
         }
 

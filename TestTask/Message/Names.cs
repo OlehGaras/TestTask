@@ -2,11 +2,11 @@ namespace Message
 {
     public enum Names
     {
-        Oleg = 0,
-        Ivan,
+        Ivan= 0,
         Andriy,
         Roman,
         Igor,
+        Oleg,
         Mickle,
         Jon,
         Bob,
