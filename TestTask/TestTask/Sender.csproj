@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="NServiceBus">
       <HintPath>..\packages\NServiceBus.Interfaces.4.4.0\lib\net40\NServiceBus.dll</HintPath>
     </Reference>
@@ -51,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndpointConfig.cs" />
-    <Compile Include="SendOrder.cs" />
+    <Compile Include="SendObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

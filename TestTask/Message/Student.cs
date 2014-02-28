@@ -13,15 +13,14 @@ namespace Message
         public string Name { get; set; }
         public string SurName { get; set; }
         public DateTime DateOfBirth { get; set; }
-        private readonly Random mRandom = new Random();
 
-        public Student()
+        public Student(Random random)
         {
             var names = Enum.GetValues(typeof(Names));
             var surnames = Enum.GetValues(typeof(Surnames));
             
-            Name = names.GetValue(mRandom.Next(names.Length)).ToString();
-            SurName = surnames.GetValue(mRandom.Next(surnames.Length)).ToString();
+            Name = names.GetValue(random.Next(names.Length)).ToString();
+            SurName = surnames.GetValue(random.Next(surnames.Length)).ToString();
             DateOfBirth = DateTime.Now;
         }
 

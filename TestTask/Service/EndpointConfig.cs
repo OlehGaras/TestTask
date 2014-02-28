@@ -1,5 +1,3 @@
-
-using System.Transactions;
 using NServiceBus.Features;
 
 namespace Service

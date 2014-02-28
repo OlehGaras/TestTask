@@ -2,7 +2,7 @@
 
 namespace Message
 {
-    public class PlaceOrder : ICommand
+    public class ObjectToSend : ICommand
     {
         public Student Student { get; set; }
     }

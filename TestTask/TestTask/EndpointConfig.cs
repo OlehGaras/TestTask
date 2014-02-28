@@ -17,8 +17,8 @@ namespace TestTask
         {
             //Configure.Instance.IsolationLevel(IsolationLevel.Serializable);
             Configure.Serialization.Xml();
-            Configure.Features.Disable<MsmqTransport>().Enable<Sagas>();
-            Configure.With().DefaultBuilder().UseRavenTimeoutPersister().UseRavenGatewayPersister().DisableTimeoutManager().UnicastBus();
+            Configure.Features.Disable<Sagas>();
+            Configure.With().DefaultBuilder().UseTransport<Msmq>().MsmqSubscriptionStorage().DisableTimeoutManager().UnicastBus();
         }
     }
 }
